@@ -1,0 +1,20 @@
+﻿@page "/"
+@using DraggableReorder.Sample.Server.Data
+@inject TestDataService DataService
+
+<h1>Hello, world!</h1>
+
+<TableDraggableContainer InstantReplace="true" TItem="TestData" Items="@DataService.GetTestData().ToList()" Context="item">
+    <TableHeader>
+        <td>Name</td>
+        <td>Description</td>
+    </TableHeader>
+    <ItemTemplate>
+        <td>
+        @item.Name
+    </td>
+    <td>
+        @item.Description
+    </td>
+    </ItemTemplate>
+</TableDraggableContainer>

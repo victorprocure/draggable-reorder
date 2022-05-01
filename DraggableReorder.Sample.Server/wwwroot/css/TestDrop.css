@@ -1,0 +1,16 @@
+﻿/*drag drop styles*/
+
+.draggable-spacing {
+    height: 10px;
+}
+
+.draggable-spacing-dragged-over {
+    padding: 25px;
+}
+
+.draggable-in-transit {
+    opacity: 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
